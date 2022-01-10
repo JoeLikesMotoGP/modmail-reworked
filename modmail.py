@@ -9,12 +9,16 @@ bot = commands.Bot(command_prefix="!", intents = discord.Intents.all())
 db = sqlite3.connect('modmail.db')
 cursor = db.cursor()
 
-# cursor.execute("""
-#     CREATE TABLE modmail (
-#         user_id int,
-#         channel_id int
-#     )
-# """)
+# Remove after running once
+
+cursor.execute("""
+    CREATE TABLE modmail (
+        user_id int,
+        channel_id int
+     )
+""")
+
+
 
 def check(key):
     if key is None:
