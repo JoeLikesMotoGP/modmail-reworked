@@ -3,7 +3,7 @@ from discord.ext import commands
 import sqlite3
 from datetime import datetime
 
-token = 'OTI5Nzk5NjA3NTMyMjkwMDQ5.YdslXQ.ERXT6MtDU_BNDxgUESXByNEdxMw'
+token = 'Your Token Here'
 bot = commands.Bot(command_prefix="!", intents = discord.Intents.all())
 
 db = sqlite3.connect('modmail.db')
